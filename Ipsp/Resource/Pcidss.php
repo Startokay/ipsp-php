@@ -1,10 +1,13 @@
 <?php
 
+namespace Ipsp\Resource;
+
+use Ipsp\Resource;
+
 /**
  * Class Ipsp_Resource_PaymentPcidss
  */
-class Ipsp_Resource_Pcidss extends Ipsp_Resource
-{
+class Pcidss extends Resource{
     protected $path = '/3dsecure_step1';
     protected $fields = array(
         'order_id' => array(

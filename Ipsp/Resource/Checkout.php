@@ -1,9 +1,13 @@
 <?php
 
+namespace Ipsp\Resource;
+
+use Ipsp\Resource;
+
 /**
- * Class Ipsp_Resource_PaymentUrl
+ * Class PaymentUrl
  */
-class Ipsp_Resource_Checkout extends Ipsp_Resource{
+class Checkout extends Resource{
     protected $path   = '/checkout/url';
     protected $fields = array(
         'merchant_id'=>array(

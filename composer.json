@@ -24,6 +24,7 @@
     "phpdocumentor/phpdocumentor": "2.*"
   },
   "autoload": {
-    "psr-4": { "\\": "Ipsp/" }
+    "psr-4": { "Ipsp\\": "Ipsp/"}
+//    "files": ["Vendor/mintance/ipsp-php/autoload.php"]
   }
 }

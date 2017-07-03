@@ -1,9 +1,12 @@
 <?php
 
+namespace Ipsp;
+
 /**
- * Class Ipsp_Request
+ * Class Request
  */
-class Ipsp_Request {
+class Request {
+
     private $curl;
     private $format;
     private $contentType = array(
@@ -15,7 +18,7 @@ class Ipsp_Request {
      *
      */
     public function __construct(){
-        $this->curl = new Ipsp_Curl;
+        $this->curl = new Curl;
     }
     /**
      * @param $format

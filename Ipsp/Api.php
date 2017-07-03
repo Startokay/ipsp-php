@@ -1,9 +1,11 @@
 <?php
 
+namespace Ipsp;
+
 /**
- * Class Ipsp_Api
+ * Class Api
  */
-class Ipsp_Api {
+class Api {
 
     private $client;
     private $params = array();
@@ -16,9 +18,9 @@ class Ipsp_Api {
     const RUB = 'RUB';
     const GBP = 'GBP';    
     /**
-     * @param Ipsp_Client $client
+     * @param Client $client
      */
-    public function __construct( Ipsp_Client $client ){
+    public function __construct( Client $client ){
         $this->client   = $client;
         set_error_handler(array($this, 'handleError'));
         set_exception_handler(array($this, 'handleException'));

@@ -1,9 +1,14 @@
 <?php
 
+namespace Ipsp\Resource;
+
+use Ipsp\Resource;
+
 /**
  * Class Ipsp_Resource_Refund
  */
-class Ipsp_Resource_Recurring extends Ipsp_Resource{
+class Recurring extends Resource{
+
     protected $path   = '/recurring';
     protected $defaultParams = array(
 

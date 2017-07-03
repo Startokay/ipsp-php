@@ -1,9 +1,13 @@
 <?php
 
+namespace Ipsp\Resource;
+
+use Ipsp\Resource;
+
 /**
  * Class Ipsp_Resource_Refund
  */
-class Ipsp_Resource_Reverse extends Ipsp_Resource{
+class Reverse extends Resource{
 
     protected $path   = '/reverse/order_id';
 

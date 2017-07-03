@@ -1,9 +1,12 @@
 <?php
 
+namespace Ipsp;
+
 /**
- * Class Ipsp_Resource
+ * Class Resource
  */
-class Ipsp_Resource {
+class Resource {
+
     protected $method = 'POST';
     protected $format = 'json';
     protected $path;
@@ -52,7 +55,7 @@ class Ipsp_Resource {
      * @return array
      */
     private function parseXml($xml=''){
-        $xml = new Ipsp_XmlData($xml);
+        $xml = new XmlData($xml);
         $data = $xml->xmlToArray();
         return $data;
     }
@@ -100,7 +103,7 @@ class Ipsp_Resource {
      * @return mixed
      */
     private function xmlParams($params=array()){
-        $xml = new Ipsp_XmlData('<request/>');
+        $xml = new XmlData('<request/>');
         $xml->arrayToXml($params);
         return $xml->asXML();
     }
@@ -115,18 +118,18 @@ class Ipsp_Resource {
             return call_user_func(array($this,$callback),$params);
         }
         else {
-            throw new Exception(sprintf('format %s not supported',$this->format));
+            throw new \Exception(sprintf('format %s not supported',$this->format));
         }
     }
     public function __construct(){
-        $this->request  = new Ipsp_Request();
+        $this->request  = new Request();
         if(!empty($this->defaultParams))
             $this->params = $this->defaultParams;
     }
     /**
      * @param Ipsp_Client $client
      */
-    public function setClient(Ipsp_Client $client){
+    public function setClient(Client $client){
         $this->client = $client;
     }
     /**
@@ -201,7 +204,7 @@ class Ipsp_Resource {
      * @param array $data
      */
     public function setResponse($data=array()){
-        $this->response = new Ipsp_Response($data);
+        $this->response = new Response($data);
     }
     /**
      * @return array
