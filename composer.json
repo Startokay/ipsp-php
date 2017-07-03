@@ -1,0 +1,29 @@
+{
+  "name": "mintance/fondy-php",
+  "description": "Fork from php fondy library",
+  "keywords": [
+    "mintance",
+    "mintance php",
+    "mintance fondy php",
+    "fondy php",
+    "mintance fondy",
+  ],
+  "homepage": "https://mintance.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mintance <dev@mintance.com>",
+      "homepage": "https://mintance.com/"
+    }
+  ],
+  "require": {
+    "php": ">=5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.7.*",
+    "phpdocumentor/phpdocumentor": "2.*"
+  },
+  "autoload": {
+    "psr-4": { "Mintance\\": "src/" }
+  }
+}
