@@ -1,12 +1,12 @@
 {
   "name": "mintance/ipsp-php",
-  "description": "Fork from php fondy library",
+  "description": "Payment Service Provider PHP SDK",
   "keywords": [
+    "ipsp",
+    "payment service provider",
+    "payment service provider php",
     "mintance",
-    "mintance php",
-    "mintance fondy php",
-    "fondy php",
-    "mintance fondy"
+    "php"
   ],
   "homepage": "https://mintance.com",
   "license": "MIT",
